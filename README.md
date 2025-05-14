@@ -43,34 +43,35 @@ The reports are available in the /reports folder of the repository.
 /BiometricDataAcquisitionAndRecognition
 │
 ├── 📁/Firmware
-│ ├── firmware_voice_acquisition.cpp
-│ ├── firmware_gait_acquisition.cpp
-│ ├── firmware_potentiometer_test.cpp
+│    ├── firmware_voice_acquisition.cpp          # Code for voice signal acquisition
+│    ├── firmware_gait_acquisition.cpp           # Code for gait data acquisition
+│    ├── firmware_potentiometer_test.cpp         # Test code for reading potentiometer
 │
 ├──📁 /DataSheets
-│ ├── MAX9814 - Microphone Amplifier with AGC and Low-Noise Microphone Biast.pdf
-│ ├── Microfono_electret_CMA-544PF-W.pdf
-│ ├── nucleo-f091rc.pdf
-│ ├── POTENTIOMETER PTV09A-4225F-B502.pdf
-│ └── ...
+│   ├── MAX9814 - Microphone Amplifier with AGC and Low-Noise Microphone Biast.pdf   # Datasheet for MAX9814 mic amp
+│   ├── Microfono_electret_CMA-544PF-W.pdf                                         # Datasheet for electret mic
+│   ├── nucleo-f091rc.pdf                                                          # STM32 Nucleo board datasheet
+│   ├── POTENTIOMETER PTV09A-4225F-B502.pdf                                        # Datasheet for PTV09A potentiometer
+│   └── ...                                                                         # Other datasheets
 │
 ├──📁 /Matlab Scripts
-│ ├──📁 /ECG Recognition
-|    ├── ecg.m
-│ ├──📁 /Gait Recognition
-|    ├── gait_side.m
-|    └── gait_top.m
-│ ├──📁 /Speaker Recognition
-|    └── speaker_recognition.m
+│   ├──📁 /ECG Recognition
+|   |   └── ecg.m                         # ECG signal processing and recognition
+│   ├──📁 /Gait Recognition
+|   |   ├── gait_side.m                  # Gait analysis with side sensor placement
+|   |   └── gait_top.m                   # Gait analysis with top sensor placement
+│   └──📁 /Speaker Recognition
+|       └── speaker_recognition.m         # Speaker identification using voice features
 │
 │
 ├──📁 /Reports
-│ ├── Report _1_Potentiometer.pdf
-│ ├── Report _2_SpeakerRecognition.pdf
-│ ├── Report _1_GaitRecognition.pdf
-│ └── Report _1_ECG.pdf
-│__ LICENSE
-└── README.md
+│   ├── Report _1_Potentiometer.pdf          # Report on potentiometer signal test
+│   ├── Report _2_SpeakerRecognition.pdf     # Report on voice-based speaker recognition
+│   ├── Report _1_GaitRecognition.pdf        # Report on gait pattern recognition
+│   └── Report _1_ECG.pdf                    # Report on ECG signal recognition
+├── LICENSE                                # Project license information
+└── README.md                              # Overview and instructions for the project
+
 ```
 ---
 
