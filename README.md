@@ -27,6 +27,8 @@ MATLAB scripts are used to process the data acquired from the sensors. This incl
 
 The scripts are written in MATLAB and are well-commented to explain each step of the processing.
 
+---
+
 ### 3. Detailed Reports
 The reports contain a detailed explanation of each case study, both in terms of the code and the reasoning behind every design choice. Each report includes:
 - Theoretical explanations of the acquisition and recognition techniques.
@@ -34,40 +36,42 @@ The reports contain a detailed explanation of each case study, both in terms of 
 - Analysis of the results obtained and any challenges encountered during implementation.
 
 The reports are available in the /reports folder of the repository.
-
+---
 ## 📁Repository Structure
-
+```
 
 /BiometricDataAcquisitionAndRecognition
 │
-├── 📁/firmware
-│ ├── voice_acquisition.cpp
-│ ├── ecg_acquisition.cpp
-│ ├── gait_acquisition.cpp
-│ ├── potentiometer_test.cpp
+├── 📁/Firmware
+│ ├── firmware_voice_acquisition.cpp
+│ ├── firmware_gait_acquisition.cpp
+│ ├── firmware_potentiometer_test.cpp
+│
+├──📁 /DataSheets
+│ ├── MAX9814 - Microphone Amplifier with AGC and Low-Noise Microphone Biast.pdf
+│ ├── Microfono_electret_CMA-544PF-W.pdf
+│ ├── nucleo-f091rc.pdf
+│ ├── POTENTIOMETER PTV09A-4225F-B502.pdf
 │ └── ...
 │
-├──📁 /data_sheets
-│ ├── microphone_datasheet.pdf
-│ ├── accelerometer_datasheet.pdf
-│ ├── ecg_detector_datasheet.pdf
-│ ├── potentiometer_datasheet.pdf
-│ └── ...
+├──📁 /Matlab Scripts
+│ ├──📁 /ECG Recognition
+|    ├── ecg.m
+│ ├──📁 /Gait Recognition
+|    ├── gait_side.m
+|    └── gait_top.m
+│ ├──📁 /Speaker Recognition
+|    └── speaker_recognition.m
 │
-├──📁 /matlab_scripts
-│ ├── voice_recognition.m
-│ ├── ecg_analysis.m
-│ ├── gait_analysis.m
-│ └── ...
 │
-├──📁 /reports
-│ ├── voice_recognition_report.pdf
-│ ├── ecg_analysis_report.pdf
-│ ├── gait_analysis_report.d
-│ └── ...
+├──📁 /Reports
+│ ├── Report _1_Potentiometer.pdf
+│ ├── Report _2_SpeakerRecognition.pdf
+│ ├── Report _1_GaitRecognition.pdf
+│ └── Report _1_ECG.pdf
 │__ LICENSE
 └── README.md
-
+```
 ---
 
 ## ☑️ How to Use
